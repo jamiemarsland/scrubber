@@ -1,0 +1,12 @@
+{
+  "name": "scrub-cover-video",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "@wordpress/scripts": "^26.3.0"
+  },
+  "scripts": {
+    "build": "mkdir -p build-editor build-frontend build && wp-scripts build src/editor.js --output-path=build-editor && wp-scripts build src/frontend.js --output-path=build-frontend && cp build-editor/* build/ && cp build-frontend/* build/ && rm -rf build-editor build-frontend",
+    "start": "wp-scripts start src/editor.js --output-path=build & wp-scripts start src/frontend.js --output-path=build"
+  }
+}

@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# But not these directories
+!.gitignore
+!wp-content/
+!wp-content/plugins/
+!wp-content/plugins/scrub-cover-video/
+!wp-content/plugins/scrub-cover-video/**
+
